@@ -1,0 +1,111 @@
+var title = document.createElement('h3');
+title.innerHTML = 'Тест по программированию';
+title.style.textAlign = "center";
+document.body.insertBefore(title, document.body.firstChild);
+
+
+
+
+var elementH1 = document.createElement('h4');
+elementH1.classList.add('spisok');
+elementH1.innerHTML = '1. Вопрос № 1';
+elementH1.style.marginLeft = "10%";
+ 
+var spisok = document.querySelector('document.body');
+document.body.appendChild(elementH1);
+
+
+
+
+var variant = document.createElement ('label');
+variant.innerHTML = 'Вариант ответа № 1';
+variant.style.display = 'block';
+variant.style.marginLeft = "10%";
+
+var spisok = document.querySelector('.spisok');
+spisok.parentNode.appendChild(variant, spisok.nextSibling);
+
+
+
+
+var box = document.createElement('input');
+box.type = 'checkbox';
+variant.insertBefore(box, variant.firstChild);
+
+
+
+
+var variant2 = variant.cloneNode(true);
+variant2.innerHTML = '<input type="checkbox">Вариант ответа № 2';
+variant.parentNode.appendChild(variant2, variant.nextSibling);
+
+
+
+
+var variant3 = variant.cloneNode(true);
+variant3.innerHTML =  '<input type="checkbox">Вариант ответа № 3';
+variant.parentNode.appendChild(variant3, variant.nextSibling);
+
+
+
+
+var elementH2 = elementH1.cloneNode(true);
+elementH2.innerHTML = '2. Вопрос № 2';
+variant.parentNode.appendChild(elementH2, variant.nextSibling); 
+
+
+
+
+var variant4 = variant.cloneNode(true);
+variant.parentNode.appendChild(variant4, variant.nextSibling);
+
+
+
+
+var variant5 = variant2.cloneNode(true);
+variant.parentNode.appendChild(variant5, variant.nextSibling);
+
+
+
+
+var variant6 = variant3.cloneNode(true);
+variant.parentNode.appendChild(variant6, variant.nextSibling);
+
+
+
+
+var elementH3 = elementH2.cloneNode(true);
+elementH3.innerHTML = '3. Вопрос № 3';
+variant.parentNode.appendChild(elementH3, variant.nextSibling); 
+
+
+
+
+var variant7 = variant.cloneNode(true);
+variant.parentNode.appendChild(variant7, variant.nextSibling);
+
+
+
+
+var variant8 = variant2.cloneNode(true);
+variant.parentNode.appendChild(variant8, variant.nextSibling);
+
+
+
+
+var variant7 = variant3.cloneNode(true);
+variant.parentNode.appendChild(variant7, variant.nextSibling);
+
+
+
+
+var elementBox = document.createElement('INPUT');
+elementBox.setAttribute("type", "submit");
+elementBox.value = 'Проверить мои результаты';
+elementBox.style.backgroundColor = "#81F7F3";
+elementBox.style.marginLeft = "35%";
+elementBox.style.padding = "10px 30px";
+elementBox.style.fontSize = "18px";
+
+
+document.body.appendChild(elementBox);
